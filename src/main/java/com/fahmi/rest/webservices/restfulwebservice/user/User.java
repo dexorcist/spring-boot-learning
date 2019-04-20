@@ -11,7 +11,7 @@ public class User {
     private String name;
 
     @Past
-    private Date birtDate;
+    private Date birthDate;
 
     public Integer getId() {
         return id;
@@ -29,22 +29,22 @@ public class User {
         this.name = name;
     }
 
-    public Date getBirtDate() {
-        return birtDate;
+    public Date getBirthDate() {
+        return birthDate;
     }
 
-    public void setBirtDate(Date birtDate) {
-        this.birtDate = birtDate;
+    public void setBirthDate(Date birtDate) {
+        this.birthDate = birtDate;
     }
 
-    public User(Integer id, String name, Date birtDate) {
+    public User(Integer id, String name, Date birthDate) {
         this.id = id;
         this.name = name;
-        this.birtDate = birtDate;
+        this.birthDate = birthDate;
     }
 
     @Override
     public String toString() {
-        return String.format("User [id=%s, name=%s, birthDate=%s]",id,name,birtDate);
+        return String.format("User [id=%s, name=%s, birthDate=%s]",id,name,birthDate);
     }
 }
